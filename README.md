@@ -90,33 +90,7 @@ Antes de aprobar una pieza funcional:
 
 Usa la [ficha de validación](docs/VALIDACION.md) para conservar la evidencia. En piezas críticas, la revisión y los ensayos deben corresponder al riesgo real de la aplicación.
 
-## Estructura del repositorio
 
-```text
-robotec-fdm-templates/
-├── README.md
-├── Robotec_FDMLabs/
-│   ├── Config_1.3mf
-│   ├── Config_2.3mf
-│   ├── Config_3.3mf
-│   └── Config_Karen.3mf
-└── docs/
-    ├── GITHUB_PRIMEROS_PASOS.md
-    ├── VALIDACION.md
-    └── figures/
-        ├── configuraciones.png
-        └── orientacion.png
-```
-
-¿Es tu primer repositorio? Sigue la [guía para publicarlo en GitHub](docs/GITHUB_PRIMEROS_PASOS.md).
-
-## Créditos y contribuciones
-
-Configuración Karen: reconocimiento a Karen por su configuración original. Configuraciones 1–3 y criterios de uso: propuesta de mejora continua de Robotec.
-
-Para proponer cambios, incluye el motivo, los parámetros modificados y, cuando existan, fotos y resultados de impresión o ensayo. Conserva las variantes experimentales separadas de los templates base hasta evaluarlas.
-
-La licencia de distribución queda pendiente de elección por los responsables del material.
 
 ## Referencias
 
