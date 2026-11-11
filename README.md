@@ -15,7 +15,6 @@ Cada archivo `.3mf` contiene un cubo y ajustes de impresión. **Son puntos de pa
 | [3](Robotec_FDMLabs/Config_3.3mf) | 8 | 5 / 5 | 7% honeycomb | Línea monotónica / monotónica | Candidata para piezas finales con cargas mayores |
 | [Karen](Robotec_FDMLabs/Config_Karen.3mf) | 12 | 8 / 8 | 20% giroide | Curva de Hilbert / curva de Hilbert | Alternativa de mayor espesor de envolvente para evaluar en piezas exigentes |
 
-Los valores se verificaron directamente en los cuatro archivos el **11 de noviembre de 2026**. El nombre correcto del patrón es **honeycomb** (panal de abeja), no *honeybee*. El honeycomb guardado no es el patrón *3D honeycomb*.
 
 ### Configuración 1 · Ligera y rápida
 
@@ -31,25 +30,7 @@ Sugerencia del equipo para evaluar piezas finales que reciben cargas importantes
 
 ### Configuración Karen · Envolvente de mayor espesor
 
-Nombrada en reconocimiento a **Karen, creadora de la configuración**. Combina doce paredes, ocho capas superiores e inferiores y 20% de giroide. Puede ser excesiva para muchas aplicaciones y resultar útil cuando se justifica una envolvente gruesa. **No garantiza resistencia, firmeza ni aptitud para una pieza crítica:** esa conclusión requiere revisar el diseño y validar la pieza. La curva de Hilbert se conserva como elección de acabado, sin atribuirle una mejora estructural demostrada.
-
-## Qué contienen los archivos
-
-Los cuatro proyectos guardan los siguientes datos:
-
-| Parámetro | Valor guardado |
-| --- | --- |
-| Aplicación de origen | Bambu Studio 02.07.01.62 |
-| Impresora | Bambu Lab X2D |
-| Perfil de impresora | `Bambu Lab X2D 0.4 nozzle` |
-| Material | `Generic PLA-CF @BBL X2D 0.4 nozzle` |
-| Altura de capa / primera capa | 0.20 / 0.20 mm |
-| Ancho de línea exterior / interior | 0.42 / 0.45 mm |
-| Espesor mínimo superior / inferior | 1.0 / 0 mm |
-
-Estos datos describen el proyecto guardado; no acreditan pruebas de impresión ni compatibilidad con otros equipos. Un espesor mínimo inferior de 0 mm **no elimina las capas inferiores**: también está configurado su número de capas. A 0.20 mm de altura, 3, 5 y 8 capas representan nominalmente 0.60, 1.00 y 1.60 mm. Comprueba el resultado efectivo en la vista previa.
-
-El número de paredes tampoco equivale directamente a un espesor universal: intervienen el ancho de extrusión, los solapes, la geometría y el generador de paredes. En zonas delgadas, las paredes pueden ocupar toda la sección y dejar poco o ningún relleno.
+Nombrada en reconocimiento a **Karen, creadora de la configuración**. Combina doce paredes, ocho capas superiores e inferiores y 20% de giroide. Puede ser excesiva para muchas aplicaciones y resultar útil cuando se justifica una envolvente gruesa. . La curva de Hilbert se conserva como elección de acabado, sin atribuirle una mejora estructural demostrada.
 
 ## Cómo usar un template
 
@@ -68,13 +49,12 @@ El número de paredes tampoco equivale directamente a un espesor universal: inte
 
 En muchas piezas, aumentar los perímetros aporta más que aumentar únicamente el relleno. Sin embargo, el relleno sí influye en el soporte de las capas superiores, rigidez y comportamiento a compresión. Por ello, no debe describirse como irrelevante para la resistencia. [Prusa: Infill](https://help.prusa3d.com/article/infill_42).
 
-El 5–7% de estos templates es una decisión inicial del equipo, no un óptimo demostrado. Si una tapa presenta hundimientos o puentes largos, evalúa aumentar el soporte interior, el relleno o las capas superiores. En zonas de tornillos y concentraciones de carga, considera refuerzos geométricos y ajustes locales en lugar de aumentar todo el modelo.
+El 5–7% de estos templates es una decisión inicial personal, no un óptimo demostrado. Si una tapa presenta hundimientos o puentes largos, evalúa aumentar el soporte interior, el relleno o las capas superiores. En zonas de tornillos y concentraciones de carga, considera refuerzos geométricos y ajustes locales en lugar de aumentar todo el modelo.
 
 ### Giroide, honeycomb y acabado superficial
 
 - **Giroide:** opción inicial recomendada aquí para nuevas variantes. Su estructura tridimensional ofrece soporte en distintas direcciones, pero no vuelve isotrópica a toda la pieza impresa.
 - **Honeycomb:** se conserva en las configuraciones 2 y 3. Es un patrón hexagonal que puede exigir más tiempo y material que otras alternativas. No se establece una superioridad general frente al giroide ni ante cargas normales a la cama: habría que comparar la pieza, orientación y modo de carga concretos.
-- **Hilbert:** es el patrón de las superficies superior e inferior de Karen; su relleno interior sigue siendo giroide. La apariencia de la superficie y el relleno interior son ajustes diferentes.
 
 Referencia: [Prusa: patrones de relleno y superficies](https://help.prusa3d.com/article/infill-patterns_177130). Sus comparaciones explican los patrones; no son ensayos de estos templates en PLA-CF. Para una comparación propia, registra masa y tiempo reales: igual porcentaje nominal no implica necesariamente igual consumo entre patrones.
 
